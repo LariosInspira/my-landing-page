@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+    body {
+    font-family: var(--font-sans);
+    color: #242220;
+    background-color: #FAF8F5;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+.font-serif-brand {
+  font-family: var(--font-serif);
+}
+
+.font-sans-brand {
+  font-family: var(--font-sans);
+}
