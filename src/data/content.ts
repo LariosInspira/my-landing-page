@@ -88,8 +88,10 @@ export const CONTACT_INFO = {
   bookUrl: "https://misegundaprimeravez.netlify.app/",
   corporateUrl: "https://naaraleadership.com",
   whatsappUrl: "https://wa.me/34600000000?text=Hola%20Sarah,%20me%20gustar%C3%ADa%20hablar%20sobre%20tus%20servicios.",
-  // Enlace del formulario oficial de Tally:
+  // Enlace del formulario oficial de Tally (contacto general):
   contactFormUrl: "https://tally.so/r/jeDoNY",
+  // Enlace del formulario oficial de lista de espera Club Naara Women:
+  clubFormUrl: "https://tally.so/r/aONBJv",
 };
 
 export function getFormEmbedUrl(rawUrl: string): string {

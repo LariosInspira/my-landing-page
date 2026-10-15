@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logoBrand from "../assets/images/regenerated_image_1791549963863.png";
 
 interface LogoProps {
   className?: string;
@@ -13,7 +14,7 @@ export const Logo: React.FC<LogoProps> = ({
   variant = "light",
   size = "md",
   alt = "Sarah Larios — Arquitecta del Climaterio",
-  src = "/src/assets/images/regenerated_image_1791549963863.png",
+  src = logoBrand,
 }) => {
   const isDark = variant === "dark";
   
@@ -25,15 +26,12 @@ export const Logo: React.FC<LogoProps> = ({
     xl: "h-20 sm:h-24",
   }[size];
 
-  // Primary image source uses the brand logo provided in regenerated_image_1791549963863.png,
-  // with fallback to /logo.png or vector SVG
-  const defaultSvg = isDark ? "/logo-dark.svg" : "/logo.svg";
-  const [currentSrc, setCurrentSrc] = useState<string>(src);
+  const [currentSrc, setCurrentSrc] = useState<string>(src || logoBrand);
 
   const handleError = () => {
-    // If image fails to load, gracefully fall back to vector SVG
-    if (currentSrc !== defaultSvg) {
-      setCurrentSrc(defaultSvg);
+    // If custom image fails to load, gracefully fall back to bundled logo
+    if (currentSrc !== logoBrand) {
+      setCurrentSrc(logoBrand);
     }
   };
 

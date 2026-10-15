@@ -1,29 +1,14 @@
-import React, { useState } from "react";
-import { Instagram, Sparkles, Check, ArrowRight, BellRing, Heart } from "lucide-react";
+import React from "react";
+import { Instagram, Sparkles } from "lucide-react";
 import { CONTACT_INFO } from "../data/content";
 
 export const Club: React.FC = () => {
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleNotifySubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    const mailto = `mailto:${CONTACT_INFO.email}?subject=${encodeURIComponent(
-      `[Club Naara Women] Solicitud de acceso a lista de apertura`
-    )}&body=${encodeURIComponent(
-      `Hola Sarah,\n\nMe gustaría unirme a la lista de apertura preferente de Club Naara Women.\n\nMi correo electrónico es: ${email}\n\n¡Gracias!`
-    )}`;
-    window.location.href = mailto;
-    setSubscribed(true);
-  };
-
   return (
     <section 
       id="club" 
       className="py-20 lg:py-28 bg-gradient-to-br from-[#0F3826] via-[#144732] to-[#0A2619] text-[#FAF8F5] border-b border-[#0A2619] relative overflow-hidden"
     >
-      {/* Decorative architectural radial glows in brand warm gold and emerald (sin naranja) */}
+      {/* Decorative architectural radial glows in brand warm gold and emerald */}
       <div 
         className="absolute -top-32 -right-32 w-[520px] h-[520px] rounded-full bg-[#D4A338]/20 blur-3xl pointer-events-none"
         aria-hidden="true"
@@ -123,42 +108,6 @@ export const Club: React.FC = () => {
                 <Instagram className="w-5 h-5 text-[#0A2619]" />
                 <span>Síguenos en @naarawomen</span>
               </a>
-
-              {/* Newsletter interest signup */}
-              <div className="pt-6 border-t border-white/15 space-y-3">
-                <div className="text-xs text-[#C5DDD1]">
-                  ¿Quieres ser de las primeras en enterarte de la apertura?
-                </div>
-
-                {subscribed ? (
-                  <div className="p-3.5 rounded-xl bg-[#D4A338]/20 border border-[#D4A338]/50 text-xs text-[#F3CE79] font-medium space-y-1">
-                    <div className="flex items-center gap-2 font-bold text-white">
-                      <Check className="w-4 h-4 text-[#F3CE79]" />
-                      <span>¡Solicitud enviada a {CONTACT_INFO.email}!</span>
-                    </div>
-                    <p className="text-[#D2E2D9] text-[11px]">
-                      Te hemos registrado en la lista de apertura preferente.
-                    </p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleNotifySubmit} className="flex gap-2">
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Tu correo electrónico"
-                      required
-                      className="flex-1 bg-black/40 border border-white/20 rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-[#8AA69A] focus:outline-none focus:border-[#D4A338]"
-                    />
-                    <button
-                      type="submit"
-                      className="px-5 py-2.5 text-xs font-bold text-[#0A2619] bg-[#D4A338] hover:bg-[#E5BA5A] rounded-lg transition-colors whitespace-nowrap shadow-md"
-                    >
-                      Avisarme
-                    </button>
-                  </form>
-                )}
-              </div>
             </div>
           </div>
         </div>

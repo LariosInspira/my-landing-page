@@ -1,6 +1,7 @@
 import React from "react";
 import { Mail, ArrowRight, CheckCircle2, Calendar, MapPin, Sparkles } from "lucide-react";
 import { WORKSHOPS, CONTACT_INFO } from "../data/content";
+import workshopsSpaceImage from "../assets/images/talleres_climaterio_espacio_1791546947311.jpg";
 
 interface WorkshopsProps {
   onOpenInquiry: (topic?: string) => void;
@@ -69,7 +70,7 @@ export const Workshops: React.FC<WorkshopsProps> = ({ onOpenInquiry }) => {
         {/* Environmental Photography Banner with vibrant badge */}
         <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[21/9] sm:aspect-[16/6] bg-[#EAE5DC] border-2 border-[#E7E2DA]">
           <img
-            src="/src/assets/images/talleres_climaterio_espacio_1791546947311.jpg"
+            src={workshopsSpaceImage}
             alt="Espacio formativo luminoso y moderno para talleres sobre climaterio y liderazgo"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover object-center"

@@ -1,5 +1,6 @@
 import React from "react";
 import { Compass, Sparkles, HeartHandshake, CheckCircle2 } from "lucide-react";
+import storyPortrait from "../assets/images/regenerated_image_1791549965501.png";
 
 export const Story: React.FC = () => {
   return (
@@ -21,7 +22,7 @@ export const Story: React.FC = () => {
 
               <div className="relative rounded-lg overflow-hidden bg-white shadow-xl aspect-[3/4] border-2 border-[#E7E2DA]">
                 <img
-                  src="/src/assets/images/regenerated_image_1791549965501.png"
+                  src={storyPortrait}
                   alt="Sarah Larios sonriendo con calidez y cercanía"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover object-center"

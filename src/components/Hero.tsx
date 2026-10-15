@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRight, ArrowUpRight, BookOpen, Compass, Sparkles, Building2, ShieldCheck } from "lucide-react";
 import { CONTACT_INFO } from "../data/content";
+import heroPortrait from "../assets/images/regenerated_image_1791549963984.png";
 
 interface HeroProps {
   onOpenWaitlist: () => void;
@@ -96,7 +97,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenWaitlist }) => {
               
               <div className="relative rounded-lg overflow-hidden bg-white shadow-xl aspect-[3/4] border-2 border-[#E7E2DA]">
                 <img
-                  src="/src/assets/images/regenerated_image_1791549963984.png"
+                  src={heroPortrait}
                   alt="Sarah Larios, Arquitecta del Climaterio, sentada descalza con expresión reflexiva y empática"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover object-center"
