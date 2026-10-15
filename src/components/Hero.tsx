@@ -117,9 +117,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenWaitlist }) => {
           </div>
         </div>
 
-        {/* 4-Item Proof & Metric Strip with vibrant color cards */}
-        <div className="mt-16 pt-10 border-t border-[#E7E2DA] grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div className="p-4 rounded-xl bg-white border border-[#FCD6CA] shadow-xs space-y-1 hover:border-[#D35431] transition-colors">
+        {/* 3-Item Proof & Metric Strip with vibrant color cards */}
+        <div className="mt-16 pt-10 border-t border-[#E7E2DA] grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="p-5 rounded-xl bg-white border border-[#FCD6CA] shadow-xs space-y-1 hover:border-[#D35431] transition-colors">
             <div className="font-serif-brand text-3xl sm:text-4xl font-bold text-[#D35431] tabular-nums">
               14
             </div>
@@ -131,7 +131,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenWaitlist }) => {
             </p>
           </div>
 
-          <div className="p-4 rounded-xl bg-white border border-[#C5DDD1] shadow-xs space-y-1 hover:border-[#164E38] transition-colors">
+          <div className="p-5 rounded-xl bg-white border border-[#C5DDD1] shadow-xs space-y-1 hover:border-[#164E38] transition-colors">
             <div className="font-serif-brand text-3xl sm:text-4xl font-bold text-[#164E38] tabular-nums">
               +40
             </div>
@@ -143,7 +143,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenWaitlist }) => {
             </p>
           </div>
 
-          <div className="p-4 rounded-xl bg-white border border-[#F6E3B8] shadow-xs space-y-1 hover:border-[#D4A338] transition-colors">
+          <div className="p-5 rounded-xl bg-white border border-[#F6E3B8] shadow-xs space-y-1 hover:border-[#D4A338] transition-colors">
             <div className="font-serif-brand text-2xl sm:text-3xl font-bold text-[#D4A338]">
               Evolución
             </div>
@@ -152,18 +152,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenWaitlist }) => {
             </div>
             <p className="text-xs text-[#57534E] leading-relaxed">
               Avanzar, no volver al inicio. Neurociencia, movimiento e identidad sin recetas genéricas.
-            </p>
-          </div>
-
-          <div className="p-4 rounded-xl bg-white border border-[#FCD6CA] shadow-xs space-y-1 hover:border-[#E25A36] transition-colors">
-            <div className="font-serif-brand text-3xl sm:text-4xl font-bold text-[#E25A36]">
-              B2B & B2C
-            </div>
-            <div className="text-xs uppercase tracking-wider text-[#E25A36] font-bold">
-              Impacto real
-            </div>
-            <p className="text-xs text-[#57534E] leading-relaxed">
-              Ayuntamientos, centros de salud, empresas y mujeres.
             </p>
           </div>
         </div>
