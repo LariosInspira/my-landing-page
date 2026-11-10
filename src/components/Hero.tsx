@@ -27,22 +27,22 @@ export const Hero: React.FC<HeroProps> = ({ onOpenWaitlist }) => {
             {/* Luminous energetic pill kicker */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FFF0EB] border border-[#FCD6CA] text-[#D35431] text-xs uppercase tracking-[0.2em] font-bold shadow-xs w-fit">
               <Sparkles className="w-3.5 h-3.5 text-[#D35431]" />
-              <span>Arquitecta del Climaterio</span>
+              <span>SARAH LARIOS | ARQUITECTA DEL CLIMATERIO</span>
             </div>
 
             {/* Headline with vibrant contrast */}
             <h1 className="font-serif-brand text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-[#1C1917] leading-[1.12] [text-wrap:balance]">
-              Las mujeres +40 no necesitan más información.{" "}
+              A partir de los 35, las mujeres no necesitan más información teórica.{" "}
               <span className="italic font-normal text-[#D35431] relative">
-                Necesitan dirección.
+                Necesitan dirección y calma.
               </span>
             </h1>
 
             {/* Value Proposition */}
             <p className="text-lg lg:text-xl text-[#44403C] font-light leading-relaxed max-w-2xl">
-              Ayudo a mujeres, instituciones y empresas a entender el climaterio como lo que realmente es:{" "}
+              Acompaño a mujeres, centros educativos y organizaciones a transitar el climaterio y la perimenopausia como lo que realmente es:{" "}
               <strong className="font-medium text-[#164E38] bg-[#EBF4F0] px-1.5 py-0.5 rounded">
-                la etapa de mayor potencia de la vida de una mujer.
+                la etapa de mayor lucidez, madurez y potencia de una mujer.
               </strong>
             </p>
 
@@ -72,7 +72,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenWaitlist }) => {
             <div className="pt-4">
               <figure className="relative p-5 rounded-xl bg-gradient-to-r from-[#FFF5EE] via-[#FFF8F3] to-[#FAF8F5] border-l-4 border-[#D35431] border-y border-r border-[#F3DEC9] shadow-xs">
                 <blockquote className="font-serif-brand text-xl sm:text-2xl italic font-normal text-[#164E38] leading-snug">
-                  “Para que ninguna mujer tenga que escoger entre su salud y su liderazgo.”
+                  «Para que ninguna mujer tenga que elegir entre su salud, su paz mental y su liderazgo.»
                 </blockquote>
                 <figcaption className="mt-2 text-xs uppercase tracking-wider font-bold text-[#D35431]">
                   — Sarah Larios
@@ -124,34 +124,34 @@ export const Hero: React.FC<HeroProps> = ({ onOpenWaitlist }) => {
               14
             </div>
             <div className="text-xs uppercase tracking-wider text-[#D35431] font-bold">
-              Años de camino
+              AÑOS DE CAMINO
             </div>
             <p className="text-xs text-[#57534E] leading-relaxed">
-              Navegando la perimenopausia sin manual ni respuestas previas.
+              Navegando la transición hormonal en primera persona, iniciada precozmente a los 32 años y sin mapa previo.
             </p>
           </div>
 
           <div className="p-5 rounded-xl bg-white border border-[#C5DDD1] shadow-xs space-y-1 hover:border-[#164E38] transition-colors">
             <div className="font-serif-brand text-3xl sm:text-4xl font-bold text-[#164E38] tabular-nums">
-              +40
+              +35
             </div>
             <div className="text-xs uppercase tracking-wider text-[#164E38] font-bold">
-              La edad clave
+              LA ETAPA CLAVE
             </div>
             <p className="text-xs text-[#57534E] leading-relaxed">
-              Donde todo se transforma y comienza tu mayor potencia.
+              Donde todo se transforma, el cuerpo pide nuevos ritmos y comienza tu verdadera potencia.
             </p>
           </div>
 
           <div className="p-5 rounded-xl bg-white border border-[#F6E3B8] shadow-xs space-y-1 hover:border-[#D4A338] transition-colors">
             <div className="font-serif-brand text-2xl sm:text-3xl font-bold text-[#D4A338]">
-              Evolución
+              EVOLUCIÓN
             </div>
             <div className="text-xs uppercase tracking-wider text-[#B5851C] font-bold">
-              Enfoque integral
+              ENFOQUE INTEGRAL
             </div>
             <p className="text-xs text-[#57534E] leading-relaxed">
-              Avanzar, no volver al inicio. Neurociencia, movimiento e identidad sin recetas genéricas.
+              Avanzar con dirección, no intentar volver atrás. Neurobiología cotidiana, fuerza funcional y autorregulación sin recetas vacías.
             </p>
           </div>
         </div>

@@ -142,6 +142,19 @@ export const Workshops: React.FC<WorkshopsProps> = ({ onOpenInquiry }) => {
           })}
         </div>
 
+        {/* Idiomas disponibles en todas las propuestas */}
+        <div className="flex items-center justify-center -mt-6">
+          <div className="inline-flex flex-wrap items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-white border-2 border-[#C5DDD1] shadow-xs text-xs sm:text-sm text-[#44403C] text-center max-w-3xl">
+            <span className="w-2.5 h-2.5 rounded-full bg-[#164E38] shrink-0" />
+            <span className="font-medium text-[#1C1917]">
+              Todas las formaciones y talleres se pueden impartir de forma presencial u online en:
+            </span>
+            <span className="font-bold text-[#164E38] tracking-wide">
+              Castellano <span className="text-[#D4A338] font-normal mx-0.5">|</span> Català <span className="text-[#D4A338] font-normal mx-0.5">|</span> Português
+            </span>
+          </div>
+        </div>
+
         {/* Direct Email Callout */}
         <div className="p-8 rounded-2xl bg-gradient-to-r from-[#EBF4F0] via-[#F4FAF6] to-[#FFF8F3] border-2 border-[#C5DDD1] flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
           <div className="space-y-1 text-center sm:text-left">

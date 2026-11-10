@@ -34,15 +34,15 @@ export const Contact: React.FC = () => {
           </div>
 
           <h2 className="font-serif-brand text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight text-[#1C1917] leading-tight">
-            Hablamos.
+            Hablemos directamente
           </h2>
 
-          <p className="font-serif-brand text-2xl text-[#D35431] italic font-normal">
-            ¿Tienes algo en mente? Cuéntame.
+          <p className="font-serif-brand text-xl sm:text-2xl text-[#D35431] italic font-normal leading-relaxed">
+            ¿Tienes un proyecto en mente, buscas una formación para tu centro o quieres saber cómo empezar? Cuéntame tu momento y buscaremos el camino ideal.
           </p>
 
           <p className="text-base sm:text-lg text-[#57534E] font-light leading-relaxed">
-            Completa el formulario a continuación o comunícate directamente por email o WhatsApp.
+            Completa el formulario oficial o comunícate a través de los canales directos.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export const Contact: React.FC = () => {
               <div className="flex items-center justify-between pt-1">
                 <span className="text-xs uppercase tracking-wider font-bold text-[#D35431] flex items-center gap-1.5">
                   <Mail className="w-4 h-4 text-[#D35431]" />
-                  <span>Correo directo</span>
+                  <span>Email directo</span>
                 </span>
                 <button
                   type="button"
@@ -86,7 +86,7 @@ export const Contact: React.FC = () => {
               </a>
 
               <p className="text-xs text-[#57534E] leading-relaxed">
-                Respuesta en 24–48 horas laborables.
+                Respuesta en 24-48 horas laborables.
               </p>
             </div>
 
@@ -96,7 +96,7 @@ export const Contact: React.FC = () => {
               <div className="flex items-center justify-between pt-1">
                 <span className="text-xs uppercase tracking-wider font-bold text-[#164E38] flex items-center gap-1.5">
                   <MessageCircle className="w-4 h-4 text-[#164E38]" />
-                  <span>WhatsApp</span>
+                  <span>WhatsApp directo</span>
                 </span>
               </div>
 
